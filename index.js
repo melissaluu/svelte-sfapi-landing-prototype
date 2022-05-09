@@ -8,7 +8,7 @@ const template = ({ head, body, assets, nonce }) => "<!DOCTYPE html>\n<html lang
 
 let read = null;
 
-set_paths({"base":"","assets":""});
+set_paths({"base":"","assets":"https://melissaluu.github.io/svelte-sfapi-landing-prototype"});
 
 let default_protocol = 'https';
 
@@ -47,7 +47,7 @@ export class Server {
 			manifest,
 			method_override: {"parameter":"_method","allowed":[]},
 			paths: { base, assets },
-			prefix: assets + '/_app/',
+			prefix: assets + '/internal/',
 			prerender: true,
 			read,
 			root,
