@@ -1,5 +1,6 @@
-<script context="module">
+<script context="module" lang='ts'>
 	import { browser, dev } from '$app/env';
+	import {client} from '../scripts/sfapi';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -12,6 +13,33 @@
 	// since there's no dynamic data here, we can prerender
 	// it so that it gets served as a static asset in prod
 	export const prerender = true;
+
+  export async function load() {
+   
+		const QUERY = `
+			query {
+				shop {
+					id
+					name
+					description
+				}
+			}
+		`;
+    const {data, error} = await client
+			.query(QUERY)
+			.toPromise();
+
+    return {
+      status: error ? error : 'ok',
+      props: {
+        shop: data.shop
+      }
+    };
+  }
+</script>
+
+<script>
+	export let shop;
 </script>
 
 <svelte:head>
@@ -20,6 +48,8 @@
 </svelte:head>
 
 <div class="content">
+
+	{shop.name}
 	<h1>About this app</h1>
 
 	<p>

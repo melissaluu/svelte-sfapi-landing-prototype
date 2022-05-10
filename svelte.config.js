@@ -16,9 +16,18 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
-		// paths: {
-		// 	assets: dev ? '' : 'https://melissaluu.github.io/svelte-sfapi-landing-prototype',
-		// }
+		vite: {
+			optimizeDeps: {
+				exclude: ['@urql/svelte'],
+			}
+		},
+		paths: {
+			base: dev ? '' : '/svelte-sfapi-landing-prototype',
+			assets: dev ? '' : 'https://melissaluu.github.io/svelte-sfapi-landing-prototype',
+		},
+		appDir: 'app',
+		prerender: {onError: 'continue'},
+	
 	}
 };
 

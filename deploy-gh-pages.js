@@ -8,7 +8,8 @@ publish(
   user: {
    name: 'Melissa Luu', 
    email: 'melissa.luu@shopify.com' 
-  }
+  },
+  dotfiles: true
   },
   () => {
    console.log('Deploy Complete!');

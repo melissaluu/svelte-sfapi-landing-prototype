@@ -4,6 +4,19 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
+
+	import { operationStore, query } from '@urql/svelte';
+	const shop = operationStore(`
+	query {
+		shop {
+			id
+			name
+			description
+		}
+	}
+`);
+
+query(shop);
 </script>
 
 <svelte:head>
@@ -22,6 +35,8 @@
 
 		to your new<br />SvelteKit app
 	</h1>
+
+	TEST!! {#if $shop.fetching}<p>Loading</p>{:else}<p>{$shop.data.shop.name}</p>{/if}
 
 	<h2>
 		try editing <strong>src/routes/index.svelte</strong>
