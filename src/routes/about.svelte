@@ -38,8 +38,8 @@
   }
 </script>
 
-<script>
-	export let shop;
+<script lang="ts">
+	export let shop: any;
 </script>
 
 <svelte:head>

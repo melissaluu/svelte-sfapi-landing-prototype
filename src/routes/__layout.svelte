@@ -1,7 +1,39 @@
+<script context="module" lang="ts">
+	import {client} from '../scripts/sfapi';
+
+  export async function load() {
+		const QUERY = `
+			query {
+				shop {
+					id
+					name
+					description
+				}
+				
+			}
+		`;
+
+    const {data: {shop}, error} = await client
+			.query(QUERY)
+			.toPromise();
+			
+    return {
+      status: error ? error : 'ok',
+      props: {
+        shop
+      }
+    };
+  }
+</script>
+
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
 	import { initClient } from '@urql/svelte';
+	
+	export let shop: any;
+
+	$: shop = shop;
 
 	initClient({
 		url: 'https://happy-breeze.myshopify.com/api/2022-04/graphql',
@@ -18,18 +50,18 @@
 
 
 
-<Header />
+<Header shopName={shop.name} />
 
 <main>
 	<slot />
 </main>
 
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+<footer class="mt-28 py-8 text-center">
+	{shop.name} &copy; 2022
 </footer>
 
 <style>
-	main {
+	/* main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
@@ -56,5 +88,5 @@
 		footer {
 			padding: 40px 0;
 		}
-	}
+	} */
 </style>
