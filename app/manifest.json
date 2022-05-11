@@ -1,11 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-676a6336.js",
+    "file": "start-9c7a2db6.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-f715f2a8.js",
-      "_index-b08ce4de.js",
+      "_index-0678fdff.js",
+      "_index-01566ecb.js",
       "_paths-396f020f.js",
       "_singletons-d1fb5791.js"
     ],
@@ -18,20 +18,19 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-cfa35fef.js",
+    "file": "pages/__layout.svelte-b39ae71a.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-f715f2a8.js",
-      "_sfapi-7f116ea6.js",
+      "_index-0678fdff.js",
+      "_sfapi-4fe3a0b9.js",
       "_paths-396f020f.js",
-      "_urql-svelte-ef60b189.js",
-      "_urql-core-1b38caef.js",
-      "_index-b08ce4de.js"
+      "_urql-svelte-cb83f566.js",
+      "_index-01566ecb.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-fa33b250.css"
+      "assets/pages/__layout.svelte-98517b3b.css"
     ],
     "assets": [
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
@@ -44,50 +43,49 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-039f2fe6.js",
+    "file": "error.svelte-562c2249.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-f715f2a8.js"
+      "_index-0678fdff.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-82455ccc.js",
+    "file": "pages/about.svelte-90e38127.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-f715f2a8.js",
-      "_sfapi-7f116ea6.js",
-      "_urql-core-1b38caef.js"
+      "_index-0678fdff.js",
+      "_sfapi-4fe3a0b9.js"
     ],
     "css": [
       "assets/pages/about.svelte-bf4528fa.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-4e9b050c.js",
+    "file": "pages/index.svelte-8c341f47.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-f715f2a8.js",
-      "_urql-svelte-ef60b189.js",
-      "_urql-core-1b38caef.js",
-      "_index-b08ce4de.js"
+      "_index-0678fdff.js",
+      "_sfapi-4fe3a0b9.js",
+      "_urql-svelte-cb83f566.js",
+      "_index-01566ecb.js"
     ],
     "css": [
-      "assets/pages/index.svelte-8ca6d7b8.css"
+      "assets/pages/index.svelte-44703ae6.css"
     ]
   },
   "src/routes/todos/index.svelte": {
-    "file": "pages/todos/index.svelte-6edb2321.js",
+    "file": "pages/todos/index.svelte-203b7d9a.js",
     "src": "src/routes/todos/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-f715f2a8.js",
+      "_index-0678fdff.js",
       "_singletons-d1fb5791.js",
       "_paths-396f020f.js"
     ],
@@ -95,13 +93,13 @@
       "assets/pages/todos/index.svelte-a910a02d.css"
     ]
   },
-  "_index-f715f2a8.js": {
-    "file": "chunks/index-f715f2a8.js"
+  "_index-0678fdff.js": {
+    "file": "chunks/index-0678fdff.js"
   },
-  "_index-b08ce4de.js": {
-    "file": "chunks/index-b08ce4de.js",
+  "_index-01566ecb.js": {
+    "file": "chunks/index-01566ecb.js",
     "imports": [
-      "_index-f715f2a8.js"
+      "_index-0678fdff.js"
     ]
   },
   "_paths-396f020f.js": {
@@ -110,21 +108,15 @@
   "_singletons-d1fb5791.js": {
     "file": "chunks/singletons-d1fb5791.js"
   },
-  "_sfapi-7f116ea6.js": {
-    "file": "chunks/sfapi-7f116ea6.js",
-    "imports": [
-      "_urql-core-1b38caef.js"
-    ]
+  "_sfapi-4fe3a0b9.js": {
+    "file": "chunks/sfapi-4fe3a0b9.js"
   },
-  "_urql-svelte-ef60b189.js": {
-    "file": "chunks/urql-svelte-ef60b189.js",
+  "_urql-svelte-cb83f566.js": {
+    "file": "chunks/urql-svelte-cb83f566.js",
     "imports": [
-      "_urql-core-1b38caef.js",
-      "_index-b08ce4de.js",
-      "_index-f715f2a8.js"
+      "_sfapi-4fe3a0b9.js",
+      "_index-01566ecb.js",
+      "_index-0678fdff.js"
     ]
-  },
-  "_urql-core-1b38caef.js": {
-    "file": "chunks/urql-core-1b38caef.js"
   }
 }
