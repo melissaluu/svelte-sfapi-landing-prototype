@@ -9,7 +9,6 @@
 					name
 					description
 				}
-				
 			}
 		`;
 
@@ -56,37 +55,6 @@
 	<slot />
 </main>
 
-<footer class="mt-28 py-8 text-center">
+<footer class="mt-28 py-4 text-center text-xs bg-black text-white">
 	{shop.name} &copy; 2022
 </footer>
-
-<style>
-	/* main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	} */
-</style>
