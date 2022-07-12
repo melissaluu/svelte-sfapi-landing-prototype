@@ -191,6 +191,6 @@
 }
 .header {
 	@apply col-start-5 row-span-3 flex flex-col justify-center align-middle whitespace-nowrap;
-	margin-left: 5rem;
+	margin-left: 5.5rem;
 }
 </style>
